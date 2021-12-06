@@ -13,8 +13,8 @@ function createHome() {
 
   const openingHours = document.createElement("p");
   openingHours.setAttribute("style", "white-space: pre;");
-  openingHours.textContent = "Saturday - Thursday\r\n 11:00 - 23:00\r\n";
-  openingHours.textContent += "Friday\r\n 13:00 - 00:00";
+  openingHours.textContent = "Saturday - Thursday\r\n11:00 - 23:00\r\n";
+  openingHours.textContent += "Friday\r\n13:00 - 00:00";
 
   openingHoursContainer.appendChild(openingHoursHeader);
   openingHoursContainer.appendChild(openingHours);

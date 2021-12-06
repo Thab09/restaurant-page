@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu.js";
 
 function createHeader() {
   const navbar = document.createElement("nav");
@@ -49,7 +50,7 @@ function loadPage() {
   content.appendChild(createMain());
   content.appendChild(createFooter());
 
-  loadHome();
+  loadMenu();
 }
 
 export default loadPage;
