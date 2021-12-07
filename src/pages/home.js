@@ -1,26 +1,26 @@
+import loadMenu from "./menu";
+
 function createHome() {
   const home = document.createElement("div");
   home.classList.add("home");
 
-  const about = document.createElement("p");
-  about.textContent =
-    "Founded in 1936 by Salvatore Di Matteo, the pizzeria was then managed by the “scugnizzi pizzaioli” (street urchin pizzaioli kids, usually poor, going to school only when they had to and spending a lot of time hanging out in the narrow streets of Naples) that used to work for him.  Today, it is run by Raffaele Marigliano, who 50 years ago created an amazing pizza con alici e cicinielli (anchovies and newborn very very little fish, not produced anymore). Here you cannot miss the pizza fritta, a deep-fried pizza with ricotta cheese, provola cheese, tomato sauce and sugna (lard). Heaven on earth!";
+  const homeContainer = document.createElement("div");
 
-  const openingHoursContainer = document.createElement("div");
+  const slogan = document.createElement("p");
+  slogan.textContent = "Quality crust you can trust";
 
-  const openingHoursHeader = document.createElement("h4");
-  openingHoursHeader.textContent = "Opening Hours";
+  const orderChoices = document.createElement("p");
+  orderChoices.textContent = "Dine In. Takeaway. Delivery.";
 
-  const openingHours = document.createElement("p");
-  openingHours.setAttribute("style", "white-space: pre;");
-  openingHours.textContent = "Saturday - Thursday\r\n11:00 - 23:00\r\n";
-  openingHours.textContent += "Friday\r\n13:00 - 00:00";
+  const viewMenuButton = document.createElement("button");
+  viewMenuButton.textContent = "View Menu";
+  viewMenuButton.onclick = () => loadMenu();
 
-  openingHoursContainer.appendChild(openingHoursHeader);
-  openingHoursContainer.appendChild(openingHours);
+  homeContainer.appendChild(slogan);
+  homeContainer.appendChild(orderChoices);
+  homeContainer.appendChild(viewMenuButton);
 
-  home.appendChild(about);
-  home.appendChild(openingHoursContainer);
+  home.appendChild(homeContainer);
 
   return home;
 }
