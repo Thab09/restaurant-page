@@ -1,10 +1,7 @@
 import loadHome from "./home";
-import loadMenu from "./menu.js";
 
 function createHeader() {
   const navbar = document.createElement("nav");
-
-  const line = document.createElement("hr");
 
   const logo = document.createElement("p");
   logo.textContent = "thab's pizzeria";
@@ -24,6 +21,8 @@ function createHeader() {
   const aboutButton = document.createElement("button");
   aboutButton.textContent = "About";
   aboutButton.classList.add("nav-buttons");
+
+  const line = document.createElement("hr");
 
   navButtonContainer.appendChild(homeButton);
   navButtonContainer.appendChild(menuButton);

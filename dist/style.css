@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Nothing+You+Could+Do&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: url("./images/pizza.jpg") no-repeat fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 1.4rem auto;
+}
+
+.nav-buttons {
+  border: none;
+  background-color: transparent;
+  color: rgb(230, 230, 230);
+  margin: 0.8rem 1.4rem 1.2rem;
+  font-weight: 600;
+}
+
+hr {
+  width: 80%;
+}
+
+main {
+  flex-grow: 1;
+}
