@@ -1,6 +1,6 @@
 function createAbout() {
   const about = document.createElement("div");
-  about.classList.add("class");
+  about.classList.add("about");
 
   //ABOUT CONTAINER
   const aboutContainer = document.createElement("div");
@@ -9,7 +9,7 @@ function createAbout() {
 
   const aboutText = document.createElement("p");
   aboutText.textContent =
-    "Founded in 1936 by Salvatore Di Matteo, the pizzeria was then managed by the “scugnizzi pizzaioli” (street urchin pizzaioli kids, usually poor, going to school only when they had to and spending a lot of time hanging out in the narrow streets of Naples) that used to work for him.  Today, it is run by Raffaele Marigliano, who 50 years ago created an amazing pizza con alici e cicinielli (anchovies and newborn very very little fish, not produced anymore). Here you cannot miss the pizza fritta, a deep-fried pizza with ricotta cheese, provola cheese, tomato sauce and sugna (lard). Heaven on earth!";
+    "Founded in 1936 by aRahma binth Ahmed, the pizzeria was then managed by the “scugnizzi pizzaioli” that used to work for him.  Today, it is run by Raffaele Marigliano, who 50 years ago created an amazing pizza con alici e cicinielli. Here you cannot miss the pizza fritta, a deep-fried pizza with ricotta cheese, provola cheese, tomato sauce and sugna (lard). Heaven on earth!";
 
   aboutContainer.appendChild(aboutHeader);
   aboutContainer.appendChild(aboutText);
@@ -33,6 +33,7 @@ function createAbout() {
   contactHeader.textContent = "Contact Us";
 
   const phone = document.createElement("div");
+  phone.classList.add("contact-container");
   const phoneIcon = document.createElement("i");
   phoneIcon.classList.add("bi", "bi-telephone-fill");
   const phoneDetails = document.createElement("p");
@@ -42,6 +43,7 @@ function createAbout() {
   phone.appendChild(phoneDetails);
 
   const address = document.createElement("div");
+  address.classList.add("contact-container");
   const addressIcon = document.createElement("i");
   addressIcon.classList.add("bi", "bi-house-door-fill");
   const addressDetails = document.createElement("p");

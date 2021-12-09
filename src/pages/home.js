@@ -5,12 +5,14 @@ function createHome() {
   home.classList.add("home");
 
   const homeContainer = document.createElement("div");
+  homeContainer.classList.add("home-container");
 
   const slogan = document.createElement("p");
-  slogan.textContent = "Quality crust you can trust";
+  slogan.classList.add("slogan");
+  slogan.textContent = "Quality crust you can trust.";
 
   const orderChoices = document.createElement("p");
-  orderChoices.textContent = "Dine In. Takeaway. Delivery.";
+  orderChoices.textContent = "dine In. takeaway. delivery.";
 
   const viewMenuButton = document.createElement("button");
   viewMenuButton.textContent = "View Menu";
